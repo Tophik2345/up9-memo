@@ -47,9 +47,46 @@ function prose(text){
   return html;
 }
 const link=n=>route(n)+'.html#section-'+n;
+const shortAnswers={
+  "1": "УП-9 проверяет внутренние угрозы и действует в пределах своих полномочий.",
+  "2": "Сообщение о нарушении можно проверить, но оно ещё не доказывает вину.",
+  "3": "УП-9 может проводить служебные проверки по установленному порядку.",
+  "4": "Перед понижением или увольнением проверка обязательна, если обстоятельства неясны или оспариваются.",
+  "5": "Материалы можно собирать законно. Для обыска, задержания и переписки нужны отдельные основания.",
+  "6": "До взыскания нужно запросить объяснение и дать возможность представить материалы защиты.",
+  "7": "Отказ нужно зафиксировать. Это не признание вины; проверку можно продолжить.",
+  "8": "Проверку проводить можно при законном основании. Каждое ОРМ требует своих полномочий.",
+  "9": "Нужен факт, предусмотренный законом. Личной неприязни недостаточно.",
+  "10": "Мероприятие должно быть разрешено законом, а у сотрудника — основание и полномочие его проводить.",
+  "11": "Можно опрашивать по законной оперативной проверке. Это не заменяет допрос по уголовному делу.",
+  "12": "Можно проверять нужные по делу сведения, но не получать любую защищённую информацию.",
+  "13": "Можно исследовать законно полученные материалы, относящиеся к проверке.",
+  "14": "Наблюдать можно при законном оперативном основании. Доступ к телефону этим не разрешается.",
+  "15": "Требовать доступ только из-за статуса УП-9 нельзя. Для защищённой переписки нужен установленный законом порядок.",
+  "16": "Базы можно использовать для служебной задачи в пределах доступа. В личных целях — нельзя.",
+  "17": "Можно запросить необходимые сведения, если закон даёт право их получить.",
+  "18": "Документы можно проверять только по законному основанию, а не просто по желанию.",
+  "19": "Войти можно для законной служебной задачи. Это не даёт права сразу обыскивать или задерживать.",
+  "20": "Для входа нужно законное основание. Для принудительных действий внутри — отдельное.",
+  "21": "Нужны законные основания и основания полагать, что внутри находится объект ОРМ.",
+  "22": "Личный обыск без согласия допустим только в предусмотренных Кодексом случаях.",
+  "23": "Задерживать можно при законном основании. Просто «пока разберёмся» — нельзя.",
+  "24": "Наручники допустимы при процессуальной необходимости. Для наказания или из-за спора — нельзя.",
+  "25": "Сила допустима только при законной необходимости и соразмерно. Когда необходимость отпала — прекратить.",
+  "26": "Спецсредства можно применять для предусмотренной законом цели. Как наказание — нельзя.",
+  "27": "УП-9 может назначать взыскания только в пределах предоставленных полномочий.",
+  "28": "Взыскание выбирают из установленного перечня. Отстранение в него не входит.",
+  "29": "Назначить можно только то взыскание, на которое лично у вас есть полномочие.",
+  "30": "Меру выбирают по обстоятельствам и объясняют решение. Максимальное наказание не назначают автоматически.",
+  "31": "За один проступок — одно основное дисциплинарное взыскание.",
+  "32": "Отстранить можно при существенном служебном риске и наличии полномочия. Это не наказание.",
+  "33": "При признаках преступления служебная проверка не должна заменять уголовное расследование.",
+  "34": "Можно пресечь преступление и сохранить доказательства. Для задержания нужно законное основание.",
+  "35": "Материал передают СК при предусмотренных условиях. После принятия нельзя подменять следователя."
+};
 function card(e){
- const answer=cardAnswers[e.id];if(!answer)throw Error('Missing direct answer: '+e.id);
- return '<details class="article direct-card" id="section-'+e.id+'"><summary><span class="card-heading"><span class="number">'+String(e.id).padStart(2,'0')+'</span><span class="summary-title">'+esc(e.title)+'</span><span class="plus" aria-hidden="true">+</span></span><span class="card-decision"><strong>Можно ли</strong><span>'+esc(answer[0])+'</span></span><span class="card-requirements"><strong>Что требуется</strong><span>'+esc(answer[1])+'</span></span><span class="card-more"><span class="when-closed">Подробнее: нормы, порядок и ограничения</span><span class="when-open">Свернуть подробности</span></span></summary><div class="article-body">'+prose(displayBody(e))+'</div></details>';
+ const answer=cardAnswers[e.id];if(!answer||!shortAnswers[e.id])throw Error('Missing answer: '+e.id);
+ return '<details class="article compact-card" id="section-'+e.id+'"><summary><span class="card-heading"><span class="number">'+String(e.id).padStart(2,'0')+'</span><span class="summary-title">'+esc(e.title)+'</span><span class="plus" aria-hidden="true">+</span></span><span class="card-brief">'+esc(shortAnswers[e.id])+'</span></summary><div class="article-body"><section class="requirements-panel"><h3>Что требуется</h3><p>'+esc(answer[1])+'</p></section><h3 class="detail-heading">Порядок и правовые основания</h3>'+prose(displayBody(e))+'</div></details>';
 }
 const quick=[[1,'Компетенция УП-9'],[3,'Служебная проверка'],[6,'Объяснение сотрудника'],[8,'Оперативная проверка'],[11,'Опрос и справки'],[15,'Телефон и переписка'],[16,'Служебные базы'],[20,'Закрытые территории'],[22,'Обыск'],[23,'Задержание'],[24,'Наручники и сила'],[27,'Дисциплинарные взыскания'],[32,'Временное отстранение'],[33,'Преступление и СК'],[36,'Алгоритм']];
 const answers=[
@@ -77,7 +114,7 @@ for(const [slug,title,desc] of pages){let content='';if(slug==='index'){content=
 else{content='<p class="eyebrow">УПРАВЛЕНИЕ «9» / ПАМЯТКА</p><h1>'+title+'</h1><p class="subtitle">'+desc+'</p>'+search+glossary;
 if(slug==='algorithm'){const e=entries.find(e=>e.id===36);const parts=e.body.split(/\n\n↓\n\n/);content+='<section id="section-36" class="flow"><h2>'+esc(parts.shift())+'</h2>'+parts.map((p,i)=>{let lines=p.split('\n\n');let heading=lines.shift().replace(/^\d+\. /,'');return '<article class="step"><span class="step-number">'+String(i+1).padStart(2,'0')+'</span><div><h2>'+esc(heading.toLocaleLowerCase('ru').replace(/^./,s=>s.toUpperCase()).replace(/уп-9/g,'УП-9'))+'</h2>'+prose(lines.join('\n\n'))+'</div></article>';}).join('')+'</section><section class="main-rule"><h2>Главное правило УП-9</h2>'+prose(chunks.at(-1).replace(/^ГЛАВНОЕ ПРАВИЛО УП-9\n+/,''))+'</section>';}
 else{content+='<div class="section-heading"><h2>Материалы раздела</h2><button class="text-button" id="expand-all">Раскрыть всё</button></div>'+entries.filter(e=>e.page===slug).map(card).join('');if(slug==='service-check')content+='<div class="related"><h2>Сбор материалов</h2><a href="powers.html#section-16">Служебные системы — ст. 43 →</a><a href="powers.html#section-17">Запрос документов и сведений — ст. 44 →</a></div>';if(slug==='operative-check')content+='<div class="notice">Конкретные ОРМ выполняют только уполномоченные подразделения и сотрудники — в пределах компетенции и установленной процедуры.</div>';}}
-const html='<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Рабочая памятка Управления 9 для игрового проекта Russia Online. Основания, полномочия и ограничения."><title>'+title+' · Управление «9»</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=direct-answers-1"><script src="data.js?v=direct-answers-1" defer></script><script src="app.js?v=direct-answers-1" defer></script></head><body><a class="skip" href="#main">К содержанию</a><header><div class="header-inner"><a class="brand" href="index.html" aria-label="Управление 9 — главная"><span class="brand-mark">9</span><span>УПРАВЛЕНИЕ «9»<small>Собственная безопасность</small></span></a><button id="menu-toggle" aria-expanded="false" aria-controls="navigation">Меню <span aria-hidden="true">☰</span></button><nav id="navigation" aria-label="Главное меню">'+pages.map(p=>'<a href="'+p[0]+'.html"'+(p[0]===slug?' aria-current="page"':'')+'>'+p[1]+'</a>').join('')+'</nav></div></header><main id="main" tabindex="-1">'+content+'</main><footer><span>УПРАВЛЕНИЕ «9» <b>/</b> RUSSIA ONLINE</span><p>Игровая нормативная база Russia Online. Содержание — из предоставленной памятки.</p></footer><noscript><p class="notice">Материалы доступны без JavaScript. Для поиска и быстрых ответов включите JavaScript.</p></noscript></body></html>';
+const html='<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Рабочая памятка Управления 9 для игрового проекта Russia Online. Основания, полномочия и ограничения."><title>'+title+' · Управление «9»</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=compact-answers-2"><script src="data.js?v=compact-answers-2" defer></script><script src="app.js?v=compact-answers-2" defer></script></head><body><a class="skip" href="#main">К содержанию</a><header><div class="header-inner"><a class="brand" href="index.html" aria-label="Управление 9 — главная"><span class="brand-mark">9</span><span>УПРАВЛЕНИЕ «9»<small>Собственная безопасность</small></span></a><button id="menu-toggle" aria-expanded="false" aria-controls="navigation">Меню <span aria-hidden="true">☰</span></button><nav id="navigation" aria-label="Главное меню">'+pages.map(p=>'<a href="'+p[0]+'.html"'+(p[0]===slug?' aria-current="page"':'')+'>'+p[1]+'</a>').join('')+'</nav></div></header><main id="main" tabindex="-1">'+content+'</main><footer><span>УПРАВЛЕНИЕ «9» <b>/</b> RUSSIA ONLINE</span><p>Игровая нормативная база Russia Online. Содержание — из предоставленной памятки.</p></footer><noscript><p class="notice">Материалы доступны без JavaScript. Для поиска и быстрых ответов включите JavaScript.</p></noscript></body></html>';
 fs.writeFileSync(out+'/'+slug+'.html',html);}
 fs.writeFileSync(out+'/favicon.svg','<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#132b48"/><text x="32" y="47" text-anchor="middle" font-family="sans-serif" font-size="46" font-weight="700" fill="#a8ccff">9</text></svg>');
 fs.writeFileSync(out+'/.nojekyll','');
