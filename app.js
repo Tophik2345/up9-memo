@@ -5,7 +5,7 @@
   const normalize=s=>s.toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/стать[яиюе]/g,'ст').replace(/[«»„“”".,:;!?()—–-]/g,' ').replace(/\s+/g,' ').trim();
   const canonical=s=>s.replace(/ФЗ/g,'Федеральный закон').replace(/О ФСБ РО/g,'О Федеральной службе безопасности РО').replace(/Внутреннего устава ФСБ РО/g,'Внутреннего устава Федеральной службы безопасности РО');
   const stem=t=>t.length>5?t.slice(0,-2):t;
-  const indexed=entries.map(e=>({...e,index:normalize(e.title+' '+e.originalTitle+' '+e.body+' '+canonical(e.body)+' '+answers.filter(a=>a[4]===e.id).map(a=>a[1]).join(' '))}));
+  const indexed=entries.map(e=>({...e,index:normalize(e.title+' '+e.originalTitle+' '+(e.displayBody||e.body)+' '+e.body+' '+canonical(e.body)+' '+answers.filter(a=>a[4]===e.id).map(a=>a[1]).join(' '))}));
   const href=e=>e.page+'.html#section-'+e.id;
   const menu=$('menu-toggle');
   menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));$('navigation').classList.toggle('open',open);});
@@ -15,7 +15,7 @@
   function search(){const q=normalize($('search').value);const box=$('search-results');box.replaceChildren();box.hidden=!q;if(!q){$('search-status').textContent='По всем 36 разделам, статьям и нормативным актам';return;}
     const terms=q.split(' ');const found=indexed.filter(e=>terms.every(t=>t==='ст'?e.index.includes('ст '):t==='ск'?/(^|\s)ск(\s|$)/.test(e.index):/^\d+$/.test(t)?new RegExp('(^|\\D)'+t+'(\\D|$)').test(e.index):e.index.includes(stem(t)))).sort((a,b)=>Number(normalize(b.title).includes(q))-Number(normalize(a.title).includes(q)));
     $('search-status').textContent=found.length?'Найдено разделов: '+found.length:'Ничего не найдено. Попробуйте название действия или номер статьи.';
-    for(const e of found){const a=document.createElement('a');a.className='result';a.href=href(e);const h=document.createElement('strong');h.textContent=e.title;const meta=document.createElement('span');meta.textContent=pages.find(p=>p[0]===e.page)[1]+' · Раздел '+e.id;const p=document.createElement('span');let body=e.body.replace(/\n/g,' ');const at=normalize(body).indexOf(terms.find(t=>t!=='ст')||q);let start=Math.max(0,at-70);p.textContent=(start?'…':'')+body.slice(start,start+220)+(body.length>start+220?'…':'');a.append(h,meta,p);box.append(a);}
+    for(const e of found){const a=document.createElement('a');a.className='result';a.href=href(e);const h=document.createElement('strong');h.textContent=e.title;const meta=document.createElement('span');meta.textContent=pages.find(p=>p[0]===e.page)[1]+' · Раздел '+e.id;const p=document.createElement('span');let body=(e.displayBody||e.body).replace(/\n/g,' ');const at=normalize(body).indexOf(terms.find(t=>t!=='ст')||q);let start=Math.max(0,at-70);p.textContent=(start?'…':'')+body.slice(start,start+220)+(body.length>start+220?'…':'');a.append(h,meta,p);box.append(a);}
   }
   $('search').addEventListener('input',search);$('clear-search').addEventListener('click',()=>{$('search').value='';search();$('search').focus();});
   const question=$('question');
