@@ -5,7 +5,7 @@
   const normalize=s=>s.toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/стать[яиюе]/g,'ст').replace(/[«»„“”".,:;!?()—–-]/g,' ').replace(/\s+/g,' ').trim();
   const canonical=s=>s.replace(/ФЗ/g,'Федеральный закон').replace(/О ФСБ РО/g,'О Федеральной службе безопасности РО').replace(/Внутреннего устава ФСБ РО/g,'Внутреннего устава Федеральной службы безопасности РО');
   const stem=t=>t.length>5?t.slice(0,-2):t;
-  const indexed=entries.map(e=>({...e,index:normalize(e.title+' '+e.originalTitle+' '+(e.displayBody||e.body)+' '+e.body+' '+canonical(e.body)+' '+answers.filter(a=>a[4]===e.id).map(a=>a[1]).join(' '))}));
+  const indexed=entries.map(e=>({...e,index:normalize((e.decision||[]).join(' ')+' '+e.title+' '+e.originalTitle+' '+(e.displayBody||e.body)+' '+e.body+' '+canonical(e.body)+' '+answers.filter(a=>a[4]===e.id).map(a=>a[1]).join(' '))}));
   const href=e=>e.page+'.html#section-'+e.id;
   const menu=$('menu-toggle');
   menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));$('navigation').classList.toggle('open',open);});
