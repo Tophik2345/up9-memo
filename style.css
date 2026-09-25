@@ -9,3 +9,6 @@ body{background:radial-gradient(ellipse at 72% 8%,#11263650,transparent 48%),#07
 
 /* Search results only. */
 .result mark{background:#465329;color:#fff2b0;border-radius:2px}.result{overflow-wrap:anywhere}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{display:none}
+
+/* Preserve the search container border without an inner focus ring. */
+#search:focus,#search:focus-visible{outline:none;box-shadow:none}
