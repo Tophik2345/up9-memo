@@ -294,7 +294,7 @@
       "slug": "service-check",
       "title": "Служебная проверка",
       "description": "Проведение, объяснения, сбор материалов, запрос документов и др.",
-      "icon": "▤",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 3h8l4 4v14H6z\"/><path d=\"M14 3v5h4M9 12h6M9 16h6\"/></svg>",
       "number": "01",
       "items": [
         {
@@ -331,7 +331,7 @@
       "slug": "operative-check",
       "title": "Оперативная проверка",
       "description": "Основания, опрос, документы, наблюдение, телефон, компьютерная информация и др.",
-      "icon": "⌕",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"10\" cy=\"10\" r=\"6\"/><path d=\"m15 15 6 6\"/></svg>",
       "number": "02",
       "items": [
         {
@@ -372,7 +372,7 @@
       "slug": "powers",
       "title": "Полномочия",
       "description": "Служебные базы, документы, КПЗ, объекты, обыск, задержание, спецсредства и др.",
-      "icon": "◇",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m12 2 8 3v6c0 5-8 11-8 11S4 16 4 11V5z\"/><path d=\"M12 7v8m-3-4 3 4 3-4\"/></svg>",
       "number": "03",
       "items": [
         {
@@ -425,7 +425,7 @@
       "slug": "discipline",
       "title": "Дисциплина",
       "description": "Виды взысканий, кто может применять, выбор взыскания, отстранение.",
-      "icon": "⚖",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3v18M7 21h10M3 7h18M6 7l-4 8h8zm12 0-4 8h8z\"/></svg>",
       "number": "04",
       "items": [
         {
@@ -458,7 +458,7 @@
       "slug": "crime-sk",
       "title": "Преступление и СК",
       "description": "Признаки преступления, действия до передачи, передача в СК.",
-      "icon": "§",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 4 4-2 8 8-2 4zM11 10l-8 9M13 21h9M16 17h4v4\"/></svg>",
       "number": "05",
       "items": [
         {
@@ -479,7 +479,7 @@
       "slug": "algorithm",
       "title": "Алгоритм",
       "description": "Пошаговый порядок действий от получения информации до оформления результата.",
-      "icon": "↳",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5h5v5h6v5h5M4 3v4M18 13l3 2-3 2M4 20h9\"/></svg>",
       "number": "06",
       "items": [
         {
@@ -492,7 +492,7 @@
       "slug": "employees",
       "title": "Работа с сотрудниками",
       "description": "Объяснение, отказ от объяснения, права сотрудника.",
-      "icon": "♧",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"9\" cy=\"7\" r=\"3\"/><path d=\"M3 21v-4a6 6 0 0 1 12 0v4M16 4a3 3 0 0 1 0 6M18 13c3 0 4 2 4 5v3\"/></svg>",
       "number": "07",
       "items": [
         {
@@ -525,7 +525,7 @@
       "slug": "documents",
       "title": "Документы и материалы",
       "description": "Сбор, исследование, хранение и запрос сведений.",
-      "icon": "▱",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 6h7l2 3h9v12H3zM3 6V4h7l2 2h9v3\"/></svg>",
       "number": "08",
       "items": [
         {
@@ -550,7 +550,7 @@
       "slug": "restricted",
       "title": "Режим и режимные объекты",
       "description": "КПЗ, допросные, закрытые территории, режимные объекты.",
-      "icon": "▣",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"4\" y=\"10\" width=\"16\" height=\"11\" rx=\"2\"/><path d=\"M7 10V7a5 5 0 0 1 10 0v3M12 14v3\"/></svg>",
       "number": "09",
       "items": [
         {
@@ -571,7 +571,7 @@
       "slug": "resources",
       "title": "Информационные ресурсы",
       "description": "Служебные базы, компьютерная информация, ограничения.",
-      "icon": "▰",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M12 17v4M7 21h10\"/></svg>",
       "number": "10",
       "items": [
         {
@@ -596,7 +596,7 @@
       "slug": "risks",
       "title": "Запреты и риски",
       "description": "Что нельзя делать, типовые нарушения полномочий и ограничения.",
-      "icon": "!",
+      "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 6v7m0 3v2\"/></svg>",
       "number": "11",
       "items": [
         {
