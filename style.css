@@ -37,3 +37,10 @@ header{background:#080f19d9;border-bottom-color:#8098b32b;backdrop-filter:blur(1
 footer,.intro-note,.full-text{border-color:#8098b326}
 @media(max-width:650px){.hero-art{opacity:.3}.hero{background:none}}
 @media(prefers-reduced-motion:reduce){.topic-card{transition:none}.topic-card:hover{transform:none}}
+
+/* User-supplied architectural background, unchanged image. */
+body{background:#05090f;isolation:isolate}
+body:before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#05090f20,#05090f80 30%,#05090f70 70%,#05090f20),linear-gradient(0deg,#05090f80,#05090f15),url('background.png') center center/cover no-repeat}
+.hero,.hero:after{background:none}.hero-art{display:none}
+.intro-note{background:#0a121dd9;border:1px solid #8098b330;border-radius:7px;padding:16px;box-shadow:0 8px 24px #0003}
+@media(max-width:650px){body:before{background-position:center,center,65% center}}
