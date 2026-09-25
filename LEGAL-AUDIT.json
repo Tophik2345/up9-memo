@@ -1,0 +1,384 @@
+{
+  "date": "2026-09-25",
+  "server": "Кутузовский",
+  "method": "Открыты и прочитаны пять первоисточников форума; zakon-RO- использован как индекс.",
+  "references": {
+    "f35": {
+      "act": "f",
+      "article": "35",
+      "title": "Основания оперативно-розыскной деятельности",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "f36": {
+      "act": "f",
+      "article": "36",
+      "title": "Виды оперативно-розыскных мероприятий",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "f37": {
+      "act": "f",
+      "article": "37",
+      "title": "Ограничение конституционных прав при оперативном мероприятии",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "f38": {
+      "act": "f",
+      "article": "38",
+      "title": "Наблюдение и фиксация",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "f43": {
+      "act": "f",
+      "article": "43",
+      "title": "Использование государственных информационных систем",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "f44": {
+      "act": "f",
+      "article": "44",
+      "title": "Истребование сведений и документов",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "f45": {
+      "act": "f",
+      "article": "45",
+      "title": "Установление личности и проверка документов",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "f66": {
+      "act": "f",
+      "article": "66",
+      "title": "Преступление, совершенное сотрудником ФСБ РО",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "f68": {
+      "act": "f",
+      "article": "68",
+      "title": "Общие правила применения силы",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "f69": {
+      "act": "f",
+      "article": "69",
+      "title": "Физическая сила",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "f70": {
+      "act": "f",
+      "article": "70",
+      "title": "Специальные средства",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "f77": {
+      "act": "f",
+      "article": "77",
+      "title": "Собственная безопасность ФСБ РО",
+      "name": "Федеральный закон «О Федеральной службе безопасности РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-federal-noi-sluzhbe-bezopasnosti-ro.5310/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "c11": {
+      "act": "c",
+      "article": "11",
+      "title": "Основная компетенция подразделений",
+      "name": "Внутренний устав Федеральной службы безопасности",
+      "url": "https://forum.russia.online/threads/vnutrennii-ustav-federal-noi-sluzhby-bezopasnosti.4634/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "c21": {
+      "act": "c",
+      "article": "21",
+      "title": "Виды дисциплинарных взысканий",
+      "name": "Внутренний устав Федеральной службы безопасности",
+      "url": "https://forum.russia.online/threads/vnutrennii-ustav-federal-noi-sluzhby-bezopasnosti.4634/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "c22": {
+      "act": "c",
+      "article": "22",
+      "title": "Порядок применения взыскания",
+      "name": "Внутренний устав Федеральной службы безопасности",
+      "url": "https://forum.russia.online/threads/vnutrennii-ustav-federal-noi-sluzhby-bezopasnosti.4634/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "c23": {
+      "act": "c",
+      "article": "23",
+      "title": "Полномочия по применению взысканий",
+      "name": "Внутренний устав Федеральной службы безопасности",
+      "url": "https://forum.russia.online/threads/vnutrennii-ustav-federal-noi-sluzhby-bezopasnosti.4634/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "s4": {
+      "act": "s",
+      "article": "4",
+      "title": "Основные права государственного служащего",
+      "name": "Федеральный закон «О государственной службе РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-gosudarstvennoi-sluzhbe-ro.4971/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "s15": {
+      "act": "s",
+      "article": "15",
+      "title": "Соразмерность дисциплинарной меры",
+      "name": "Федеральный закон «О государственной службе РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-gosudarstvennoi-sluzhbe-ro.4971/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "s16": {
+      "act": "s",
+      "article": "16",
+      "title": "Служебная проверка",
+      "name": "Федеральный закон «О государственной службе РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-gosudarstvennoi-sluzhbe-ro.4971/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "s17": {
+      "act": "s",
+      "article": "17",
+      "title": "Отстранение, увольнение, обжалование и восстановление",
+      "name": "Федеральный закон «О государственной службе РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-gosudarstvennoi-sluzhbe-ro.4971/",
+      "chapter": "",
+      "status": "confirmed"
+    },
+    "p1": {
+      "act": "p",
+      "article": "1",
+      "title": "Личный обыск",
+      "name": "Процессуальный кодекс РО",
+      "url": "https://forum.russia.online/threads/protsessual-nyi-kodeks-ro.4910/",
+      "chapter": "Глава V «Обыск и допрос»",
+      "status": "confirmed"
+    },
+    "p6.1": {
+      "act": "p",
+      "article": "6.1",
+      "title": "",
+      "name": "Процессуальный кодекс РО",
+      "url": "https://forum.russia.online/threads/protsessual-nyi-kodeks-ro.4910/",
+      "chapter": "Глава I «Следствие»",
+      "status": "confirmed"
+    },
+    "p6.3": {
+      "act": "p",
+      "article": "6.3",
+      "title": "",
+      "name": "Процессуальный кодекс РО",
+      "url": "https://forum.russia.online/threads/protsessual-nyi-kodeks-ro.4910/",
+      "chapter": "Глава I «Следствие»",
+      "status": "confirmed"
+    },
+    "t2.7": {
+      "act": "t",
+      "article": "2.7",
+      "title": "",
+      "name": "Федеральный закон «О государственных территориях РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-gosudarstvennykh-territoriyakh-ro.4981/",
+      "chapter": "",
+      "status": "unconfirmed"
+    },
+    "t2.18": {
+      "act": "t",
+      "article": "2.18",
+      "title": "",
+      "name": "Федеральный закон «О государственных территориях РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-gosudarstvennykh-territoriyakh-ro.4981/",
+      "chapter": "",
+      "status": "unconfirmed"
+    },
+    "t3.16": {
+      "act": "t",
+      "article": "3.16",
+      "title": "",
+      "name": "Федеральный закон «О государственных территориях РО»",
+      "url": "https://forum.russia.online/threads/federal-nyi-zakon-o-gosudarstvennykh-territoriyakh-ro.4981/",
+      "chapter": "",
+      "status": "unconfirmed"
+    }
+  },
+  "basisMap": {
+    "1": [
+      "c11:ч. 4",
+      "f77"
+    ],
+    "2": [
+      "c11:ч. 4",
+      "f77"
+    ],
+    "3": [
+      "f77:ч. 2",
+      "c11:ч. 4",
+      "s16"
+    ],
+    "4": [
+      "s16:ч. 1"
+    ],
+    "5": [
+      "s16",
+      "c22:ч. 1",
+      "s4:п. 4",
+      "f43",
+      "f44",
+      "f66"
+    ],
+    "6": [
+      "c22:ч. 1",
+      "s4:п. 4"
+    ],
+    "7": [
+      "c22:ч. 1"
+    ],
+    "8": [
+      "f77:ч. 2",
+      "f35"
+    ],
+    "9": [
+      "f35"
+    ],
+    "10": [
+      "f36",
+      "p6.1",
+      "f35",
+      "f37"
+    ],
+    "11": [
+      "f36:п. 1",
+      "p6.1:п. «а»"
+    ],
+    "12": [
+      "f36:п. 2"
+    ],
+    "13": [
+      "f36:п. 4",
+      "p6.1:п. «д»"
+    ],
+    "14": [
+      "f36:п. 5",
+      "f38"
+    ],
+    "15": [
+      "f37",
+      "p6.1:п. «л»"
+    ],
+    "16": [
+      "f43"
+    ],
+    "17": [
+      "f44"
+    ],
+    "18": [
+      "f45"
+    ],
+    "19": [
+      "t2.7"
+    ],
+    "20": [
+      "t2.18"
+    ],
+    "21": [
+      "t3.16"
+    ],
+    "22": [
+      "p1"
+    ],
+    "23": [
+      "f66:ч. 2"
+    ],
+    "24": [
+      "p6.3"
+    ],
+    "25": [
+      "f68",
+      "f69"
+    ],
+    "26": [
+      "f70"
+    ],
+    "27": [
+      "c23:ч. 5",
+      "c22"
+    ],
+    "28": [
+      "c21",
+      "c23"
+    ],
+    "29": [
+      "c23"
+    ],
+    "30": [
+      "c22:ч. 2",
+      "s15"
+    ],
+    "31": [
+      "c22:ч. 3",
+      "s15:ч. 3"
+    ],
+    "32": [
+      "s17:ч. 1",
+      "c23:ч. 4",
+      "c21"
+    ],
+    "33": [
+      "f77:ч. 3",
+      "f66"
+    ],
+    "34": [
+      "f66:ч. 2"
+    ],
+    "35": [
+      "f66:ч. 1, 3"
+    ],
+    "36": [
+      "f35",
+      "f66"
+    ]
+  },
+  "unconfirmed": [
+    "t2.7",
+    "t2.18",
+    "t3.16"
+  ],
+  "note": "Единица подсчёта: уникальная статья НПА; повторные ссылки и части не считаются отдельными статьями. Внутренний устав назван по заголовку темы, совпадающему с src индекса. Статьи 6.1 и 6.3 Кодекса не имеют отдельного заголовка; название не придумано. Глава V уточнена до статьи 1 по прямому совпадению текста личного обыска."
+}
