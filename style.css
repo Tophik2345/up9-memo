@@ -12,3 +12,28 @@ body{background:radial-gradient(ellipse at 72% 8%,#11263650,transparent 48%),#07
 
 /* Preserve the search container border without an inner focus ring. */
 #search:focus,#search:focus-visible{outline:none;box-shadow:none}
+
+/* Restrained dark glass finish; existing layout and interactions preserved. */
+:root{--line:#8098b330;--muted:#a5b2c1;--blue:#aac5e1}
+body{background:radial-gradient(ellipse at 85% 0, #1b2a3a70, transparent 48%),linear-gradient(165deg,#0a121d 0%,#05090f 58%,#080e16 100%);color:#e8edf3}
+header{background:#080f19d9;border-bottom-color:#8098b32b;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.topbar nav a{color:#a5b2c1}.topbar nav a[aria-current]{color:#bfd1e3;border-bottom-color:#91acc6}
+.hero{background:linear-gradient(110deg,#05090f4d,transparent 65%)}
+.hero-art{opacity:.55;filter:brightness(.72) saturate(.55);mask-image:linear-gradient(90deg,transparent,#000 62%)}
+.hero:after{background:linear-gradient(0deg,#080f18,transparent 70%)}
+.hero h1{text-shadow:0 2px 14px #0005}.hero .subtitle{color:#b2bfce}
+.principle{background:#101c2ab8;border-color:#829db747;box-shadow:inset 0 1px 0 #ffffff04}
+.topic-card,.material,.subsections a,.search-box{background:linear-gradient(130deg,#101c2ad9,#0a121dcc);border-color:#8098b330;box-shadow:0 8px 24px #00000026,inset 0 1px 0 #d6e8ff05}
+.topic-card,.search-box{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.topic-card{transition:transform .16s ease,border-color .16s ease,background .16s ease}
+@media(hover:hover){.topic-card:hover{transform:translateY(-2px);border-color:#9bb4cc66;background:linear-gradient(130deg,#182636e6,#101c2ad9)}}
+.topic-card p{color:#a8b6c6}.card-top,.arrow{color:#91a7bd}
+.search-box{box-shadow:inset 0 1px 5px #00000026,0 5px 18px #0000001a}
+.search-box input::placeholder{color:#899aab}.search-box button{color:#9daec0}
+#search-results{background:#0d1824f5;border-color:#8098b338}.result:hover{background:#1b2a3a80}
+.subsections a[aria-current]{background:linear-gradient(90deg,#1b2a3ae6,#101c2ad9);border-color:#89a4c064;color:#e5edf5}
+.answer-block{background:linear-gradient(110deg,#142130db,#101c2ad4);border-color:#8098b324;box-shadow:inset 0 1px 0 #ffffff03}
+.answer-block p{color:#c5cfd9}.answer-block.green{color:#91cbb0}.answer-block.blue{color:#aac5e1}.answer-block.amber{color:#d2bc8e}.answer-block.purple{color:#b7a5cd}.answer-block.red{color:#d7a2a9}
+footer,.intro-note,.full-text{border-color:#8098b326}
+@media(max-width:650px){.hero-art{opacity:.3}.hero{background:none}}
+@media(prefers-reduced-motion:reduce){.topic-card{transition:none}.topic-card:hover{transform:none}}
